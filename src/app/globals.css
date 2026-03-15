@@ -1,0 +1,74 @@
+/**
+ * Global Styles
+ *
+ * Tailwind directives and global CSS styles for the application.
+ * The @tailwind directives inject Tailwind's base, component, and utility styles.
+ */
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base styles using @layer base */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom component styles using @layer components */
+@layer components {
+  /* Custom button styles that can be reused */
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold
+           hover:bg-primary-700 transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold
+           hover:bg-gray-300 transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+
+  /* Card component style */
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl
+           transition-shadow duration-300;
+  }
+
+  /* Section padding for consistent spacing */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Container with max width */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom utility classes using @layer utilities */
+@layer utilities {
+  /* Text gradient utility */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-purple-600
+           bg-clip-text text-transparent;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+}

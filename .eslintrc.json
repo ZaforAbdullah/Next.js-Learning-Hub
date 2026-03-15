@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "no-console": "warn",
+    "no-unused-vars": "warn"
+  }
+}
