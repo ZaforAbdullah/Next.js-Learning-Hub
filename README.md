@@ -1,6 +1,6 @@
 # Next.js 16 Portfolio - Complete Learning Hub
 
-**[Live Demo](https://your-project.vercel.app)** — deployed on Vercel
+**[Live Demo](https://nextjs-v16-learning-hub.vercel.app/)** — deployed on Vercel
 
 A comprehensive Next.js 16 portfolio application with Turbopack, React 19.2, and all major concepts including App Router, Server Components, SSR, SSG, ISR, API Routes, Proxy, and more. Built with TypeScript, Tailwind CSS, and Docker for production deployment.
 
